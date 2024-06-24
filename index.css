@@ -24,7 +24,7 @@ header {
 .header-left {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center items vertically */
+  justify-content: center;
 }
 
 .header-right {
@@ -33,14 +33,15 @@ header {
 
 .content {
   display: flex;
-  margin: 10px;
+  margin: 20px 40px;
   padding: 0;
+  justify-content: center;
 }
 
 .content-right {
   flex: 1;
   background-color: white;
-  padding: 1em;
+    max-width: 1000px;
 }
 
 .aboutContainer {
@@ -284,7 +285,7 @@ footer p {
   }
 
   .aboutRightCol {
-    margin-left: 250px;
+    margin-left: 230px;
   }
 
   .verticalImage {
