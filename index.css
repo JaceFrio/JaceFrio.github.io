@@ -1,6 +1,6 @@
 /* Base Styles */
 body {
-  background-color: white;
+  background-color: rgb(237,238,240);
   color: #1F2937;
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -33,7 +33,7 @@ header {
 
 .content {
   display: flex;
-  margin: 20px 40px;
+  margin: 0px 40px;
   padding: 0;
   justify-content: center;
 }
@@ -41,7 +41,8 @@ header {
 .content-right {
   flex: 1;
   background-color: white;
-    max-width: 1000px;
+  max-width: 1000px;
+  padding: 20px;
 }
 
 .aboutContainer {
