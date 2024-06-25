@@ -10,7 +10,7 @@ const aboutRightColObserver = new IntersectionObserver(entries => {
     // Add the class immediately
     aboutRightCol.classList.add('slideFromLeft')
 
-    // Set a timeout to remove the class after 1 second
+    // Set a timeout to remove the class after 1.5 seconds (duration of the animation)
     timeoutId = setTimeout(() => {
       aboutRightCol.classList.remove('slideFromLeft')
     }, 1500)
