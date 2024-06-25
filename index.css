@@ -281,16 +281,20 @@ footer p {
       margin-top: 1em;
   }
 
+  .content {
+    margin: 0;
+  }
+
   .aboutHello {
     font-size: 48px;
   }
 
   .aboutRightCol {
-    margin-left: 230px;
+    margin-left: 12em;
   }
 
   .verticalImage {
-    width: 300px;
+    width: 250px;
   }
 
   header nav ul {
