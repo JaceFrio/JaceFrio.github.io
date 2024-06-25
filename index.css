@@ -1,4 +1,9 @@
 /* Base Styles */
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: rgb(237,238,240);
   color: #1F2937;
