@@ -1,6 +1,20 @@
-const aboutRightCol = document.querySelector('.aboutRightCol');
-const aboutRightColObserver = new IntersectionObserver(entries => {
-  aboutRightCol.classList.toggle( 'slideFromLeft', entries[0].isIntersecting );
-});
+const aboutRightCol = document.querySelector('.aboutRightCol')
+let timeoutId
 
-aboutRightColObserver.observe( aboutRightCol );
+const aboutRightColObserver = new IntersectionObserver(entries => {
+  // Clear any existing timeout
+  clearTimeout(timeoutId)
+
+  // Check if the element is intersecting
+  if (entries[0].isIntersecting) {
+    // Add the class immediately
+    aboutRightCol.classList.add('slideFromLeft')
+
+    // Set a timeout to remove the class after 1 second
+    timeoutId = setTimeout(() => {
+      aboutRightCol.classList.remove('slideFromLeft')
+    }, 1500)
+  }
+})
+
+aboutRightColObserver.observe(aboutRightCol)
