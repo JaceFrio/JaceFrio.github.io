@@ -10,7 +10,7 @@ const aboutRightColObserver = new IntersectionObserver(entries => {
       setTimeout(() => {
         aboutRightCol.classList.remove('slideFromLeft');
         isAnimating = false;
-      }, 1500); // Match the animation duration
+      }, 1600);
     }
   });
 }, {
